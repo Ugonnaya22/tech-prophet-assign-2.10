@@ -1,0 +1,74 @@
+<!doctype html>
+<!-- added the lang attribute so the checker stops yelling at me -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- forgot the title tag before, added it here -->
+    <title>Oakwood Community Library</title>
+  </head>
+  <body>
+    <header>
+      <h1>Oakwood Community Library</h1>
+      <nav>
+        <a href="fixed.html">Home</a>
+        <!-- swapped out those broken links for anchor links that actually work -->
+        <a href="#about">About</a>
+        <a href="#newsletter">Newsletter</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- changed h5 to h2 so the heading levels actually make sense -->
+      <h2 id="about">About Our Library</h2>
+
+      <!-- put the alt text in so it passes the accessibility check -->
+      <img
+        src="images/library.svg"
+        alt="Oakwood Community Library banner"
+        width="600"
+        height="250"
+      />
+
+      <p>
+        Oakwood Community Library has served our neighborhood for over twenty
+        years with books, free internet, and study spaces.
+      </p>
+
+      <!-- fixed the messy nesting, closed em inside the p tag -->
+      <p>Join our popular <em>monthly mystery book club</em>.</p>
+
+      <div>
+        <!-- finally closed this paragraph tag lol -->
+        <p>
+          We are currently accepting book donations for our annual charity book
+          sale.
+        </p>
+      </div>
+
+      <section id="newsletter">
+        <h2>Newsletter Signup</h2>
+        <form>
+          <div>
+            <!-- matched the 'for' attribute to the input's 'email-box' id -->
+            <label for="email-box">Email Address:</label>
+            <input type="email" id="email-box" name="email" />
+          </div>
+
+          <div>
+            <label for="member-name">Full Name:</label>
+            <input type="text" id="member-name" name="name" />
+          </div>
+
+          <!-- changed this id to 'member-name-note' so it doesn't duplicate the input id -->
+          <p id="member-name-note">Please provide your full legal name.</p>
+
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Oakwood Community Library.</p>
+    </footer>
+  </body>
+</html>

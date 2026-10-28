@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- left out the lang attribute for the assignment -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- purposely skipped the title tag -->
+</head>
+<body>
+    <header>
+        <h1>Oakwood Community Library</h1>
+        <nav>
+            <a href="broken.html">Home</a>
+            <!-- broken links pointing to pages that don't exist -->
+            <a href="catalog.html">Book Catalog</a>
+            <a href="events.html">Upcoming Events</a>
+        </nav>
+    </header>
+
+    <main>
+       <!-- heading jump from h1 directly to h5 -->
+        <h5>About Our Library</h5>
+
+        <!-- missing alt text on this image -->
+        <img src="images/library.svg" width="600" height="250">
+
+        <p>Oakwood Community Library has served our neighborhood for over twenty years with books, free internet, and study spaces.</p>
+
+        <!-- messed up the nesting here -->
+        <p>Join our popular <em>monthly mystery book club</p></em>
+
+        <div>
+            <!-- left this p tag unclosed -->
+            <p>We are currently accepting book donations for our annual charity book sale.
+        </div>
+
+        <section>
+            <h5>Newsletter Signup</h5>
+            <form>
+                <div>
+                    <!-- mismatched the label 'for' and input 'id' -->
+                    <label for="user-email">Email Address:</label>
+                    <input type="email" id="email-box" name="email">
+                </div>
+
+                <div>
+                    <label for="member-name">Full Name:</label>
+                    <!-- reusing the member-name id here to cause a duplicate error -->
+                    <input type="text" id="member-name" name="name">
+                </div>
+
+                <p id="member-name">Please provide your full legal name.</p>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Oakwood Community Library.</p>
+    </footer>
+</body>
+</html>
